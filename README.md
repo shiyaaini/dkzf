@@ -51,10 +51,13 @@ forwards:
 ## 使用方法
 
 1. 启动应用：
+
    ```
    npm start
    ```
+
    或者开发模式：
+
    ```
    npm run dev
    ```
@@ -62,17 +65,20 @@ forwards:
 2. 打开浏览器访问 `http://localhost:3000`
 
 3. 使用配置文件中设置的账号密码登录：
+
    - 默认用户名：admin
    - 默认密码：admin
    - 可在`config.yml`文件中的`admin`部分修改
 
 4. 使用Web界面添加转发规则：
+
    - 点击"添加新规则"按钮
    - 填写规则名称、源端口（本机监听的端口）和目标地址（转发的目标主机和端口）
    - 选择是否立即启用
    - 点击"保存"按钮
 
 5. 查看连接日志：
+
    - 点击导航栏的"连接日志"链接
    - 查看所有连接的详细信息，包括时间、IP地址和数据传输量
 
@@ -91,11 +97,40 @@ forwards:
 
 # 截图
 
-![two](.\image\two.png)
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .image-container img {
+    max-width: min(80%, 600px);
+    height: auto;
+    display: block;
+  }
+</style>
+</head>
+<body>
+  <div class="image-container">
+    <img src="./image/one.png" alt="Image 1">
+    <img src="./image/two.png" alt="Image 2">
+    <img src="./image/three.png" alt="Image 3">
+  </div>
+</body>
+</html>
 
-![three](.\image\three.png)
-
-![one](.\image\one.png)
 
 # 赞赏（随心即可）：
 
@@ -103,6 +138,7 @@ forwards:
   <img src="./image/five.jpg" alt="left" style="float: left; width: 33%; margin-right: 10px;">
   <img src="./image/six.jpg" alt="right" style="width: 65%; left; width: 33%;">
 </div>
+
 
 ## 许可证
 
