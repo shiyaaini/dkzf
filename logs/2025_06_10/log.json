@@ -1,0 +1,64 @@
+{
+  "forwards": [
+    {
+      "id": 1,
+      "name": "默认转发",
+      "source_port": 8080,
+      "target_host": "192.168.1.100",
+      "target_port": 8080,
+      "enabled": true,
+      "created_at": "2025-06-10T00:00:00.000Z"
+    }
+  ],
+  "logs": [
+    {
+      "forward_id": 2,
+      "client_ip": "127.0.0.1",
+      "timestamp": "2025-06-09T20:16:07.815Z",
+      "bytes_transferred": 0,
+      "id": 1
+    },
+    {
+      "forward_id": 2,
+      "client_ip": "127.0.0.1",
+      "timestamp": "2025-06-09T20:16:07.839Z",
+      "bytes_transferred": 0,
+      "id": 2
+    },
+    {
+      "forward_id": 2,
+      "client_ip": "127.0.0.1",
+      "timestamp": "2025-06-09T20:16:09.401Z",
+      "bytes_transferred": 8488,
+      "id": 3
+    },
+    {
+      "forward_id": 2,
+      "client_ip": "127.0.0.1",
+      "timestamp": "2025-06-09T20:19:22.709Z",
+      "bytes_transferred": 576,
+      "id": 4
+    },
+    {
+      "forward_id": 2,
+      "client_ip": "127.0.0.1",
+      "timestamp": "2025-06-09T20:19:24.738Z",
+      "bytes_transferred": 0,
+      "id": 5
+    },
+    {
+      "forward_id": 2,
+      "client_ip": "127.0.0.1",
+      "timestamp": "2025-06-09T20:19:24.745Z",
+      "bytes_transferred": 2715,
+      "id": 6
+    },
+    {
+      "forward_id": 2,
+      "client_ip": "127.0.0.1",
+      "timestamp": "2025-06-09T20:19:25.754Z",
+      "bytes_transferred": 10488,
+      "id": 7
+    }
+  ]
+}

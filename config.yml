@@ -1,0 +1,21 @@
+# 服务器配置
+server:
+  port: 3000
+
+# 管理员账号配置
+admin:
+  username: admin
+  password: admin
+
+# 端口转发配置
+forwards:
+  - name: 默认转发
+    sourcePort: 8080
+    targetHost: 192.168.1.100
+    targetPort: 8080
+    enabled: true
+  - name: 迪拜
+    sourcePort: 3838
+    targetHost: 165.154.12.165
+    targetPort: 3838
+    enabled: true

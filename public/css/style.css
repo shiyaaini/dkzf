@@ -1,0 +1,64 @@
+/* 全局样式 */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+/* 表格样式 */
+.table {
+  font-size: 14px;
+}
+
+.table th {
+  white-space: nowrap;
+}
+
+/* 开关按钮样式 */
+.form-check-input {
+  cursor: pointer;
+}
+
+.form-switch .form-check-input:checked {
+  background-color: #198754;
+  border-color: #198754;
+}
+
+/* 卡片样式 */
+.card {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.card-header {
+  font-weight: 500;
+}
+
+/* 按钮样式 */
+.btn {
+  font-weight: 500;
+}
+
+/* 表单样式 */
+.form-label {
+  font-weight: 500;
+}
+
+.form-text {
+  font-size: 0.85rem;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .table-responsive {
+    font-size: 13px;
+  }
+  
+  .btn-sm {
+    padding: 0.25rem 0.4rem;
+    font-size: 0.75rem;
+  }
+} 

@@ -1,0 +1,48 @@
+<div class="row mb-4">
+  <div class="col">
+    <h1>添加转发规则</h1>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <form action="/add-forward" method="POST">
+      <div class="mb-3">
+        <label for="name" class="form-label">规则名称</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+        <div class="form-text">为此转发规则提供一个描述性名称</div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="sourcePort" class="form-label">源端口</label>
+          <input type="number" class="form-control" id="sourcePort" name="sourcePort" min="1" max="65535" required>
+          <div class="form-text">本地计算机将监听的端口号</div>
+        </div>
+        
+        <div class="col-md-6 mb-3">
+          <label for="targetPort" class="form-label">目标端口</label>
+          <input type="number" class="form-control" id="targetPort" name="targetPort" min="1" max="65535" required>
+          <div class="form-text">目标主机上的端口号</div>
+        </div>
+      </div>
+      
+      <div class="mb-3">
+        <label for="targetHost" class="form-label">目标主机</label>
+        <input type="text" class="form-control" id="targetHost" name="targetHost" required>
+        <div class="form-text">目标主机的IP地址或域名</div>
+      </div>
+      
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="enabled" name="enabled" checked>
+        <label class="form-check-label" for="enabled">立即启用</label>
+        <div class="form-text">如果选中，规则将在创建后立即生效</div>
+      </div>
+      
+      <div class="d-flex">
+        <button type="submit" class="btn btn-primary me-2">保存</button>
+        <a href="/" class="btn btn-secondary">取消</a>
+      </div>
+    </form>
+  </div>
+</div> 
